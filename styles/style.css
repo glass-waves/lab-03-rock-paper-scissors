@@ -8,3 +8,6 @@ body, html {
 * {
     box-sizing: border-box;
 }
+.inner-arena img {
+    max-width: 100px;
+}
