@@ -13,13 +13,14 @@ const resetButton = document.getElementById('reset-button');
 // initialize state
 let numberOfWins = 0;
 let numberOfLosses = 0;
-
+let numberOfDraws = 0;
 
 // set event listeners to update state and DOM
 throwButton.addEventListener('click', () => {
-
+    //grab user choice and convert to string value
     const userChoice = document.querySelector('input[type="radio"]:checked');
     const userThrow = userChoice.value;
+    //create a random number between 1 and 3 and store it in computerThrow
     const computerThrow = getRandomThrow();
 
     //display user image
@@ -28,5 +29,17 @@ throwButton.addEventListener('click', () => {
     const result = didUserWin(userThrow, computerThrow);
     //display who wins
     displayWhoWins(result);
-
+    //increment correct column
+    if (result === 0) numberOfLosses++;
+    if (result === 1) numberOfDraws++;
+    if (result === 2) numberOfWins++;
+    //update counts on screen
+    update();
 });
+
+function update(){
+    winNumber.textContent = numberOfWins;
+    lossNumber.textContent = numberOfLosses;
+    drawNumber.textContent = numberOfDraws;
+
+};
