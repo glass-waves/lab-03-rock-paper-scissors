@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { didUserWin } from './utils.js';
 import { getRandomThrow } from './get-random-throw.js';
-import { displayPhoto, displayWhoWins } from './displayFunctions.js';
+import { displayPhoto, displayWhoWins, resetImages } from './displayFunctions.js';
 
 
 const winNumber = document.getElementById('win-number');
@@ -37,9 +37,16 @@ throwButton.addEventListener('click', () => {
     update();
 });
 
+resetButton.addEventListener('click', () => {
+    resetImages();
+    numberOfWins = 0;
+    numberOfLosses = 0;
+    numberOfDraws = 0;
+    update();
+});
+
 function update(){
     winNumber.textContent = numberOfWins;
     lossNumber.textContent = numberOfLosses;
     drawNumber.textContent = numberOfDraws;
-
-};
+}

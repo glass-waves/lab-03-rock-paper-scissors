@@ -40,3 +40,8 @@ export function displayWhoWins(result) {
             break;            
     } 
 }
+
+export function resetImages() {
+    userImage.src = '//:0';
+    computerImage.src = '//:0';
+}
