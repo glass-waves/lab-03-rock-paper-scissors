@@ -34,6 +34,7 @@ header {
 }
 .inner-arena img {
     max-height: 100px;
+
 }
 .inner-arena h2 {
     font-size: 50px;
@@ -50,6 +51,18 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-
+}
+label {
+    margin-right: 30px;
+}
+input:checked + img {
+    border: dotted 5px magenta;  
+    border-radius: 50%;
+    height: 60px;
+} 
+input {
+    display: none;
+}
+.selector img {
+    height: 50px;
 }

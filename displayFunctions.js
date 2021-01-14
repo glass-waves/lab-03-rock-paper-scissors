@@ -44,4 +44,5 @@ export function displayWhoWins(result) {
 export function resetImages() {
     userImage.src = '//:0';
     computerImage.src = '//:0';
+    whoWinsText.textContent = "Let's Play!";
 }
