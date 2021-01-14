@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -20,30 +22,28 @@
 
         <section class="arena">
             <div class="scores">
-                <div class="win-column">
-                    <h2>Wins:</h2>
-                    <p id="win-number">0</p>
-                </div>
-                <div class=draw-column>
-                    <h2>Draws:</h2>
-                    <p id="draw-number">0</p>
-                </div>
-                <div class=loss-column>
-                    <h2>Losses:</h2>
-                    <p id="loss-number">0</p>
-                </div>
             </div>
             <div class="inner-arena">
-                <div class="left-column">
-                    <h3>Human</h3>
+                <div class="left-column arena-column">
+                    <div>
+                        <h3>Human</h3>
+                        <p>Score: <span id="win-number">0</span> </p>
+                    </div>
                     <img src="//:0" alt="" id="user-image">
                 </div>
-                <div class="middle-column">
-                    <h2>VS</h2>
+                <div class="middle-column arena-column">
+                    <div>
+                        <h2>VS</h2>
+                        <p>Draws: <span id="draw-number">0</span></p>
+                    </div>
                     <h4 id="who-wins">User Wins!</h4>
                 </div>
-                <div class="right-column">
-                    <h3>Computer</h3>
+                <div class="right-column arena-column">
+                    <div>                    
+                        <h3>Computer</h3>
+                        <p>Score: <span id="loss-number">0</span></p>
+                    </div>
+
                     <img src="//:0" alt="" id="computer-image">
                 </div>
                 
