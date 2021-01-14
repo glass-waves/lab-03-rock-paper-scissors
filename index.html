@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -57,6 +59,12 @@
 
         <section class="game-controls">
             <p>Prove that human minds are still more powerful than AI by choosing your sign and pushing throw. </p>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beat Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>Choose wisely.</p>
             <div class="selector">
                 <label>
                     <input type="radio" name="rps" value="rock">
@@ -75,6 +83,7 @@
             </div>
             <button id="throw-button">Throw!</button>
             <button id="reset-button">Reset Game</button>
+            <p>Reset Count: <span id="reset-counter">0</span></p>
         </section>
     </div>
     

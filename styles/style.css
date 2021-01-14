@@ -8,15 +8,20 @@ body, html {
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #5F3E74;
+}
 .outer-container {
     height: 100%;
     width: 100%;
     display:grid;
     grid-template-rows: 3fr 2fr;
+    color: white;
 }
 header {
     text-align: center;
-    height: 100px;
+    padding: 15px;
+    /* height: 50px; */
 }
 .arena {
     display: grid;
@@ -30,12 +35,19 @@ header {
     grid-template-columns: 3fr 4fr 3fr;
     color: white;
     padding: 15px 30px;
-    font-family: 'Bangers', cursive;    
+    font-family: 'Bangers', cursive; 
+    border: 1px solid white;   
 }
 .inner-arena img {
     max-height: 100px;
 
 }
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 40px;    
+    color: rgb(255, 255, 255);
+}
+
 .inner-arena h2 {
     font-size: 50px;
 }
@@ -43,8 +55,9 @@ header {
     font-size: 30px;
 }
 .inner-arena h4 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 40px;
+
 }
 .arena-column {
     display: flex;
@@ -52,17 +65,53 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-label {
-    margin-right: 30px;
-}
+
 input:checked + img {
-    border: dotted 5px magenta;  
-    border-radius: 50%;
-    height: 60px;
+    border: dotted 5px yellow;  
+    border-radius: 40%;
+    height: 80px;
 } 
 input {
     display: none;
 }
+.selector {
+    max-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto 20px auto;
+}
 .selector img {
-    height: 50px;
+    height: 60px;
+}
+.game-controls{
+    text-align: center;
+}
+button {
+    display: block;
+    margin: 10px auto;
+    background-color: rgb(221,19,84);
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.inner-arena p {
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
 }

@@ -9,11 +9,13 @@ const lossNumber = document.getElementById('loss-number');
 const drawNumber = document.getElementById('draw-number');
 const throwButton = document.getElementById('throw-button');
 const resetButton = document.getElementById('reset-button');
+const resetCounterDisplay = document.getElementById('reset-counter');
 
 // initialize state
 let numberOfWins = 0;
 let numberOfLosses = 0;
 let numberOfDraws = 0;
+let resetCounter = 0;
 
 // set event listeners to update state and DOM
 throwButton.addEventListener('click', () => {
@@ -42,6 +44,7 @@ resetButton.addEventListener('click', () => {
     numberOfWins = 0;
     numberOfLosses = 0;
     numberOfDraws = 0;
+    resetCounter++;
     update();
 });
 
@@ -49,4 +52,5 @@ function update(){
     winNumber.textContent = numberOfWins;
     lossNumber.textContent = numberOfLosses;
     drawNumber.textContent = numberOfDraws;
+    resetCounterDisplay.textContent = resetCounter;
 }
