@@ -14,30 +14,43 @@
 
 <body>
     <header>
-
+        <h1>Rock, Paper, Scissors!</h1>
     </header>
     <div class="outer-container">
 
         <section class="arena">
-            <div class="win-column">
-                <h2>Wins:</h2>
-                <p id="win-number">0</p>
+            <div class="scores">
+                <div class="win-column">
+                    <h2>Wins:</h2>
+                    <p id="win-number">0</p>
+                </div>
+                <div class=draw-column>
+                    <h2>Draws:</h2>
+                    <p id="draw-number">0</p>
+                </div>
+                <div class=loss-column>
+                    <h2>Losses:</h2>
+                    <p id="loss-number">0</p>
+                </div>
             </div>
-            <div class=draw-column>
-                <h2>Draws:</h2>
-                <p id="draw-number">0</p>
-            </div>
-            <div class=loss-column>
-                <h2>Losses:</h2>
-                <p id="loss-number">0</p>
-            </div>
-
             <div class="inner-arena">
-                <h3>Computer</h3>
-                <img src="//:0" alt="" id="computer-image">
-                <h4 id="who-wins">User Wins!</h4>
-                <img src="//:0" alt="" id="user-image">
-                <h3>Human</h3>
+                <div class="left-column">
+                    <h3>Human</h3>
+                    <img src="//:0" alt="" id="user-image">
+                </div>
+                <div class="middle-column">
+                    <h2>VS</h2>
+                    <h4 id="who-wins">User Wins!</h4>
+                </div>
+                <div class="right-column">
+                    <h3>Computer</h3>
+                    <img src="//:0" alt="" id="computer-image">
+                </div>
+                
+
+
+                
+                
             </div>
         </section>
 

@@ -8,6 +8,29 @@ body, html {
 * {
     box-sizing: border-box;
 }
+.outer-container {
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-rows: 3fr 2fr;
+}
+header {
+    text-align: center;
+    height: 100px;
+}
+.arena {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.inner-arena {
+    background-image: url('../assets/arena.png') ;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
 .inner-arena img {
-    max-width: 100px;
+    max-height: 100px;
 }
