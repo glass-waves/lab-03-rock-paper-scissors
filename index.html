@@ -9,45 +9,84 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors! </title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div>
+        <h1>Rock, Paper, Scissors!</h1>
     </header>
-    <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+    <div class="outer-container">
 
-            <content>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
+        <section class="arena">
+            <div class="scores">
+            </div>
+            <div class="inner-arena">
+                <div class="left-column arena-column">
+                    <div>
+                        <h3>Human</h3>
+                        <p>Score: <span id="win-number">0</span> </p>
+                    </div>
+                    <img src="//:0" alt="" id="user-image">
+                </div>
+                <div class="middle-column arena-column">
+                    <div>
+                        <h2>VS</h2>
+                        <p>Draws: <span id="draw-number">0</span></p>
+                    </div>
+                    <h4 id="who-wins">Let's Play!</h4>
+                </div>
+                <div class="right-column arena-column">
+                    <div>                    
+                        <h3>Computer</h3>
+                        <p>Score: <span id="loss-number">0</span></p>
+                    </div>
 
+                    <img src="//:0" alt="" id="computer-image">
+                </div>
+                
+
+
+                
+                
+            </div>
         </section>
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
+
+        <section class="game-controls">
+            <p>Prove that human minds are still more powerful than AI by choosing your sign and pushing throw. </p>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beat Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>Choose wisely.</p>
+            <div class="selector">
+                <label>
+                    <input type="radio" name="rps" value="rock">
+                    <img src="assets/rock.png" alt="">
+                </label>
+                <label>
+                    <input type="radio" name="rps" value="paper">
+                    <img src="assets/paper.png" alt="">
+
+                </label>
+                <label>
+                    <input type="radio" name="rps" value="scissors">
+                    <img src="assets/scissors.png" alt="">
+
+                </label>
+            </div>
+            <button id="throw-button">Throw!</button>
+            <button id="reset-button">Reset Game</button>
+            <p>Reset Count: <span id="reset-counter">0</span></p>
+        </section>
+    </div>
+    
     <script type="module" src="app.js"></script>
 </body>
 
